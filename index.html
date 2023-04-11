@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="description" content="Calcule os preços dos seus serviços de Freelancer com a Freelas">
+  <meta name="keywords" content="Freelancer, Freela, Trabalho por hora">
+  <meta name="author" content="Gabriel Machado">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Freelas</title>
+
+  <link rel="stylesheet" href="/styles/css/global.css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">  
+
+  <script src=" https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    
+  
+  <!--HEADER-->
+
+    <header class="header">
+      <a class="header__logo" href="01Home.html">
+          <img src="/assets/Logo.png" alt="Logo" width="100px" height="100px">
+      </a>
+    </header> 
+
+  <!--FORMS-->
+
+  <br><br>
+
+  <h2 class="centralizar">Calculadora Freelancer</h2>
+  <br>
+  <h3 class="centralizar">Calcule seu valor/hora:</h3>
+  <br>
+
+  <form id="FormValorHora" class="centralizar">
+      <label for="faturamentomes">Quanto você quer faturar por mês com seus serviço de freelancer:</label>
+      <input type="text" id="faturamentomes" name="faturamentomes"><br><br>
+      <label for="horas">Qual o número de horas por dia que você planeja trabalhar:</label>
+      <input type="text" id="horas" name="horas"><br><br>
+      <label for="dias">Você pretende trabalhar em quantos dias da semana:</label>
+      <input type="text" id="dias" name="dias"><br><br>
+      <label for="ferias">Quantas semanas de férias você planeja tirar no ano:</label>
+      <input type="text" id="ferias" name="ferias"><br><br>        
+      <br>
+      <input class="botao__texto" type="submit" onClick="calcularValorHora()" value="CALCULAR SEU VALOR/HORA"/>
+  </form>
+
+  <p id="Resposta" class="centralizar"> </p>
+
+
+  <br><br><br><br>
+
+  <h3 class="centralizar">Calcule o valor de um projeto:</h3>
+  <br>
+
+  <form id="FormValorProjeto" class="centralizar">
+      <label for="faturamentohora">Quanto você fatura por hora:</label>
+      <input type="text" id="faturamentohora" name="faturamentohora"><br><br>
+      <label for="horasproj">Quantas horas você vai trabalhar no projeto, por dia:</label>
+      <input type="text" id="horasproj" name="horasproj"><br><br>
+      <label for="diasproj">Quantos dias você estima que o projeto vai durar:</label>
+      <input type="text" id="diasproj" name="diasproj"><br><br>
+      <label for="nomeproj">Qual o nome desse projeto:</label>
+      <input type="text" id="nomeproj" name="nomeproj"><br><br>
+      <br>
+      <input class="botao__texto" type="submit" onClick="calcularValorProjeto()" value="CALCULAR O PREÇO DO SEU PROJETO"/>
+  </form>
+
+  <br><br><br><br>
+
+  <button class="botao__texto" class="botao" type="botao" onClick="VerProjetoAnterior()">Consulte projeto preenchido anteriormente</button>
+
+  <!--VÍDEO-->
+
+  <div id="player" class="centralizar" data-video-id=""></div>
+
+  <!--RODAPÉ-->
+
+  <section class="footer">
+    <div class="centralizar">
+
+        <h2>Veja novidades nas nossas Redes:</h2>
+        <br>
+        <ul>
+            <li><a href="https://www.instagram.com">Instagram</a></li>
+            <li><a href="https://www.tiktok.com">Tik Tok</a></li>
+            <li><a href="https://www.facebook.com">Facebook</a></li>
+        </ul>
+
+    </div>
+
+    <br><br>
+    <hr/>
+    <footer class="footer">2023 Freelas - Todos os direitos reservados</footer>
+  </section>
+  
+  <script src='JS1.js'></script>
+</body>
+
+</html>
+
+
